@@ -1,0 +1,101 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .color {
+            background-color: papayawhip;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<div class="color">
+    <div class="container">
+
+        <h1>Rejestracja użytkownika</h1>
+        <form method="post" action="url gdzie wysyłamy">
+
+            <div class="form-group">
+                <h3>Dane użytkownika:</h3>
+                <label for="firstNameId">Imię</label>
+                <input type="text" name="firstName" class="form-control" id="firstNameId" placeholder="Imię">
+            </div>
+            <div class="form-group">
+                <label for="lastNameId">Nazwisko</label>
+                <input type="text" name="lastName" class="form-control" id="lastNameId" placeholder="Nazwisko">
+            </div>
+            <div class="form-group">
+                <label for="brithDateId">Data urodzenia:</label>
+                <input type="date" name="brithDate" class="form-control" id="brithDateId">
+            </div>
+            <div class="form-group">
+                <label>Płeć</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="Kobieta" checked>
+                    <label class="form-check-label" for="Kobieta">
+                        Kobieta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="Mężczyzna" checked>
+                    <label class="form-check-label" for="Mężczyzna">
+                        Mężczyzna
+                    </label>
+                </div>
+            </div>
+
+            <h3>Miejsce zamieszkania:</h3>
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="streetId">Ulica</label>
+                        <input type="text" name="street" class="form-control" id="streetId" placeholder="Ulica">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numberId">Numer mieszkania</label>
+                        <input type="text" name="number" class="form-control" id="numberId"
+                               placeholder="Numer mieszkania">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="postCodeId">Kod pocztowy</label>
+                        <input type="text" name="postCode" class="form-control" id="postCodeId"
+                               placeholder="Kod pocztowy">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="provinceId">Województwo</label>
+                        <select type="text" name="province" class="form-control" id="provinceId"
+                                placeholder="Województwo">
+                            <option>dolnośląskie</option>
+                            <option>śląskie</option>
+                            <option>zachodniopomorskie</option>
+                            <option>pomorskie</option>
+                            <option>mazowieckie</option>
+                            <option>małopolskie</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Dodatkowe informacje</h3>
+            <div class="form-group">
+                <label for="describeId">Opis dotychczasowego doświadczenia z programowaniem</label>
+                <textarea class="form-control" name="describeExpirience" id="describeId" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
